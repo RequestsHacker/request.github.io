@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nazar.best</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Это техническая часть сайта, но я рад что ты сюда заглянул :) -->
+<script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+<!-- скрипт взят из кодепена -->
+
+<svg class="goo-filter" viewBox="0 0 1 1">
+  <filter id="goo">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20" result="goo" />
+  </filter>
+</svg>
+
+<main id="app">
+  
+  <section class="backgrounds">
+    <div 
+         class="background" 
+         style="--primary: var(--pink); --secondary: var(--orange)">
+    </div>
+    <div 
+         class="background" 
+         data-active="true" style="--primary: var(--purple); --secondary: var(--pink)">
+    </div>
+    <div 
+         class="background" 
+         style="--primary: var(--green); --secondary: var(--cyan)">
+    </div>
+    <div 
+         class="background" 
+         style="--primary: var(--blue); --secondary: var(--purple)">
+    </div>
+  </section>
+  
+  <section class="content">
+    <article>
+      <header>
+        <h1>Куда я попал?</h1>
+      </header>
+      <p>Привет, посетитель сиего сайта, скорее всего ты неспроста зашел сюда, для детального ознакомления и ответов на частые вопросы, пролистай вперед</p>
+    </article>
+    <article data-active="true" >
+      <header>
+        <h1>Что из мы из себя представляем</h1>
+      <p>На данном сайте ты сможешь найти полезные материалы связанные с версткой сайтов и моими проектами</p>
+    </article>
+    <article data-id="3" >
+      <header>
+        <h1>Ну и где же контент?!</h1>
+      </header>
+      <p>На самом деле контента очень мало, предлагаю ознакомиться с крутой таблицой, созданной ентузиастами на codepen, ссылка nazar.best/periodic-table.html</p>
+    </article>
+    <article data-id="4">
+      <header>
+        <h1>Средства разработки и связь </h1>
+      </header>
+      <p>Для разработки сайта я использовал: html css js(фреймворки jsquery и многие другие) , брал шаблон елементов со специализорованных сайтов(example-codepen)</p>
+	  <h2>Я не писал шаблонный сайт и не использовал cms. Связь со мной support@elita.dx.am планирую поставить свой smtp сервер</h2>
+    </article>
+  </section>
+</main>
+<h1>Сейчас проводится обновление дизайна сайта!!! Полная версия сайта nazar.best будет доступна скоро...а пока-что зайди на nazar.best/periodic-table.html</h1>
+<!-- Очень странно подключать скрипт в конце кода, не правда ли? -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
